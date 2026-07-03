@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-PT"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Voting Game - Edição Casa. Baralho digital otimizado para Smart TVs.">
+    <title>The Voting Game</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="pause-overlay" class="overlay-screen" style="display: none;">
+        <div class="pause-content">
+            <h2>Intervalo</h2>
+            <p>Vão buscar mais bebidas. O jogo já continua.</p>
+            <span class="key-hint mt-2">Prima START para retomar</span>
+        </div>
+    </div>
+
+    <main class="tv-container">
+        
+        <section id="lobby-screen" class="active-screen">        
+            <div class="lobby-header">
+                <h1 class="game-title">The Voting Game</h1>
+                <p class="game-subtitle">Edição Casa</p>
+            </div>
+            
+            <div class="instructions-footer">
+                <p>Prima <span class="key-hint">START</span> no comando ou <span class="key-hint">ENTER</span> para iniciar</p>
+                <div class="action-buttons">
+                    <button id="start-btn" class="tv-button primary">Começar Jogo</button>
+                    <button id="reset-memory-btn" class="tv-button secondary">Limpar Histórico de Cartões</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="card-container" class="game-arena" style="display: none;">
+            </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
